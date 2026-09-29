@@ -1,0 +1,70 @@
+site_name: Family Electronics Workshop
+site_description: A sequenced, build-it-yourself electronics course for a parent and two kids, from first solder joints to robots, test gear, and ham radio.
+repo_url: https://github.com/wyattfry/family-electronics-workshop
+repo_name: wyattfry/family-electronics-workshop
+edit_uri: ""
+docs_dir: _site_src
+site_dir: _site
+
+theme:
+  name: material
+  icon:
+    logo: material/chip
+  features:
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      toggle: {icon: material/weather-night, name: Dark mode}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      toggle: {icon: material/weather-sunny, name: Light mode}
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: README.md
+  - Workshop:
+      - Bench, tools & safety: 00-workshop/README.md
+      - Skill ladder & badges: 00-workshop/skill-ladder.md
+  - Units:
+      - 1 First Light: units/01-first-light/README.md
+      - 2 Crystal Radio: units/02-crystal-radio/README.md
+      - 3 Bristlebots: units/03-bristlebots/README.md
+      - 4 Punk Console: units/04-punk-console/README.md
+      - 5 Line Follower: units/05-line-follower/README.md
+      - 6 Etch a Board: units/06-etch-a-board/README.md
+      - 7 Bench Supply: units/07-bench-supply/README.md
+      - 8 Build a Scope: units/08-scope/README.md
+      - 9 Microcontrollers & Sensors: units/09-microcontrollers/README.md
+      - 10 Servo Puppeteer: units/10-servo-puppeteer/README.md
+      - 11 Bluetooth Speaker: units/11-bluetooth-speaker/README.md
+      - 12 Radio Remote: units/12-radio-remote/README.md
+      - 13 License + Fox Hunt: units/13-fox-hunt/README.md
+      - 14 Quadruped: units/14-quadruped/README.md
+      - 15 Radio Capstone: units/15-radio-capstone/README.md
+      - 16 Micro RC Cars: units/16-micro-rc-cars/README.md
+  - Resources: resources.md
+  - Templates:
+      - Build log: templates/build-log.md
+      - Unit template: templates/unit-template.md
