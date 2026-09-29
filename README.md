@@ -1,5 +1,7 @@
 # Family Electronics Workshop
 
+**Website:** <https://electrolab.wyattfry.com>
+
 A sequenced, build-it-yourself electronics course for a parent and two kids (ages 8 and 11
 at the start, fall 2026).
 

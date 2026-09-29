@@ -1,4 +1,5 @@
 site_name: Family Electronics Workshop
+site_url: https://electrolab.wyattfry.com/
 site_description: A sequenced, build-it-yourself electronics course for a parent and two kids, from first solder joints to robots, test gear, and ham radio.
 repo_url: https://github.com/wyattfry/family-electronics-workshop
 repo_name: wyattfry/family-electronics-workshop
